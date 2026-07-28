@@ -1,1 +1,1 @@
-https://poria-dev.github.io/Test_Type/src
+https://poria-dev.github.io/Typing-Speed-Test/src
