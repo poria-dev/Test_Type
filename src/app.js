@@ -14,7 +14,7 @@ let y;
 let flag = 0
 let val;
 let val2;
-inp.addEventListener("input", () => {
+inp.addEventListener("keydown", () => {
 
     flag++
     if (flag == 1) {
