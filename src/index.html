@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-100">
+
+    <section class="w-full min-h-screen container mx-auto flex justify-center items-center py-10">
+
+        <div
+            class="all w-[650px] min-h-[800px] lg:min-h-[900px] mx-2 bg-white border border-gray-200 rounded-3xl shadow-2xl px-6 py-6 flex flex-wrap gap-5">
+
+            <!-- Title -->
+            <div class="w-full flex justify-between items-center">
+
+                <h3 class="text-3xl lg:text-4xl font-extrabold capitalize">
+                    Typing Speed Test
+                </h3>
+
+                <span id="reset"
+                    class="w-14 overflow-hidden h-14 flex justify-center items-center rounded-2xl bg-purple-100 border border-purple-300 shadow-lg cursor-pointer hover:scale-110 duration-300">
+                    <img src="img/icons8-restart.gif" alt="" class="rounded-2xl">
+                </span>
+
+            </div>
+<!-- Timer -->
+
+<div class="w-full flex justify-center">
+
+    <div class="relative">
+
+        <!-- Glow -->
+
+        <div
+            class="absolute inset-0 rounded-full bg-violet-500/20 blur-2xl scale-125">
+        </div>
+
+        <div
+            class="relative w-52 h-52 rounded-full bg-white shadow-[0_20px_50px_rgba(0,0,0,.15)] flex justify-center items-center">
+
+            <!-- Outer Border -->
+
+            <div
+                class="absolute inset-0 rounded-full border-[14px] border-slate-200">
+            </div>
+
+            <!-- Progress -->
+
+            <svg
+                class="absolute inset-0 -rotate-90"
+                viewBox="0 0 180 180">
+
+                <circle
+                    cx="90"
+                    cy="90"
+                    r="78"
+                    fill="none"
+                    stroke="#22c55e"
+                    stroke-width="14"
+                    stroke-linecap="round"
+                    stroke-dasharray="490"
+                    stroke-dashoffset="0"
+                    id="progress">
+                </circle>
+
+            </svg>
+
+            <!-- Center -->
+
+            <div class="text-center">
+
+                <p
+                    class="uppercase text-slate-500 tracking-[3px] text-sm font-bold">
+
+                    Time Left
+
+                </p>
+
+                <h2
+                    id="timer"
+                    class="text-6xl font-black text-slate-800 mt-1">
+
+                    30
+
+                </h2>
+
+                <span
+                    class="text-slate-400 text-sm">
+
+                    Seconds
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- Text -->
+            <div class="w-full">
+
+                <h5 class="text-xl font-bold capitalize mb-3">
+                    Type the following text :
+                </h5>
+
+                <p id="para"
+                    class="bg-gray-50 select-none rounded-2xl shadow-md p-5 text-gray-700 text-lg leading-8">
+                    Lorem ipsum dolor sit amet consectetur eligendi cupiditate
+                    
+                </p>
+
+            </div>
+
+            <!-- Input -->
+            <div class="w-full">
+
+                <textarea id="inp" rows="5" placeholder="Start typing..."
+                    class="w-full h-40 text-xl resize-none rounded-2xl  border-2 border-sky-500  bg-white shadow-xl px-5 py-4  font-semibold outline-none"></textarea>
+
+            </div>
+
+            <!-- Status -->
+            <div class="w-full">
+
+                <span id="status" class="font-semibold ">
+                    
+                </span>
+
+            </div>
+
+
+
+            <!-- Legend -->
+            <div class="w-full flex justify-around">
+
+                <div class="flex items-center gap-2 font-bold">
+                    <span class="w-4 h-4 rounded-full bg-amber-400 shadow"></span>
+                    <h6>On Track</h6>
+                </div>
+
+                <div class="flex items-center gap-2 font-bold">
+                    <span class="w-4 h-4 rounded-full bg-green-400 shadow"></span>
+                    <h6>Correct</h6>
+                </div>
+
+                <div class="flex items-center gap-2 font-bold">
+                    <span class="w-4 h-4 rounded-full bg-red-400 shadow"></span>
+                    <h6>Wrong</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="w-full mt-20 bg-slate-900">
+
+    <div class="max-w-6xl mx-auto px-6 py-10">
+
+        <div class="flex flex-wrap justify-between items-center gap-10">
+
+            <!-- Profile -->
+
+            <div class="flex items-center gap-5">
+
+                <img src="img/github_profile_under_1mb.jpg"
+                    class="w-20 h-20 rounded-full border-2 border-violet-500 object-cover">
+
+                <div>
+
+                    <h2 class="text-2xl font-bold text-white">
+                        Pooria Rezaee
+                    </h2>
+
+                    <p class="text-slate-400 mt-1">
+                        Front-End Developer
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Social -->
+
+            <div class="flex flex-wrap gap-3">
+
+                <a href="https://github.com/poria-dev"
+                    target="_blank"
+                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-slate-700 duration-300 text-white">
+
+                    GitHub
+
+                </a>
+
+                <a href="https://linkedin.com/in/pooria-rezaee"
+                    target="_blank"
+                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-blue-700 duration-300 text-white">
+
+                    LinkedIn
+
+                </a>
+
+                <a href="https://instagram.com/poria.frontend"
+                    target="_blank"
+                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-pink-600 duration-300 text-white">
+
+                    Instagram
+
+                </a>
+
+                <a href="https://t.me/pori_07"
+                    target="_blank"
+                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-[#229ED9] duration-300 text-white">
+
+                    Telegram
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/10 mt-8 pt-6 text-center">
+
+            <p class="text-slate-400 text-sm leading-7">
+
+                Built with HTML, Tailwind CSS & JavaScript •
+                Designed for practicing typing speed and accuracy.
+
+            </p>
+
+            <p class="text-slate-500 text-sm mt-3">
+
+                © 2026 Pooria Rezaee. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
