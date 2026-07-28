@@ -348,7 +348,6 @@ again.addEventListener("click",()=>{
     soundstart.pause()
 
 
-
     location.reload()
 
 
