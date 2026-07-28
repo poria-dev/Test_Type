@@ -2,257 +2,653 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Test</title>
-    <link rel="stylesheet" href="output.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Typing Speed Test</title>
+
+<link rel="stylesheet" href="output.css">
+
 </head>
 
-<body class="bg-slate-100">
 
-    <section class="w-full min-h-screen container mx-auto flex justify-center items-center py-10">
+<body class="bg-slate-100 overflow-x-hidden">
 
-        <div
-            class="all w-[650px] min-h-[800px] lg:min-h-[900px] mx-2 bg-white border border-gray-200 rounded-3xl shadow-2xl px-6 py-6 flex flex-wrap gap-5">
 
-            <!-- Title -->
-            <div class="w-full flex justify-between items-center">
+<section class="w-full h-screen overflow-hidden flex justify-center items-center px-3 bg-gradient-to-br from-slate-100 via-violet-50 to-cyan-50">
 
-                <h3 class="text-3xl lg:text-4xl font-extrabold capitalize">
-                    Typing Speed Test
-                </h3>
 
-                <span id="reset"
-                    class="w-14 overflow-hidden h-14 flex justify-center items-center rounded-2xl bg-purple-100 border border-purple-300 shadow-lg cursor-pointer hover:scale-110 duration-300">
-                    <img src="img/icons8-restart.gif" alt="" class="rounded-2xl">
-                </span>
 
-            </div>
-<!-- Timer -->
+<div class="all w-full max-w-[650px] h-[96vh] bg-white/70 backdrop-blur-2xl border border-white/60 rounded-[35px] shadow-[0_30px_80px_rgba(0,0,0,.18)] px-5 py-5 flex flex-col gap-4 overflow-hidden">
 
-<div class="w-full flex justify-center">
 
-    <div class="relative">
 
-        <!-- Glow -->
 
-        <div
-            class="absolute inset-0 rounded-full bg-violet-500/20 blur-2xl scale-125">
-        </div>
 
-        <div
-            class="relative w-52 h-52 rounded-full bg-white shadow-[0_20px_50px_rgba(0,0,0,.15)] flex justify-center items-center">
+<!-- Header -->
 
-            <!-- Outer Border -->
 
-            <div
-                class="absolute inset-0 rounded-full border-[14px] border-slate-200">
-            </div>
+<div class="w-full flex justify-between items-center">
 
-            <!-- Progress -->
 
-            <svg
-                class="absolute inset-0 -rotate-90"
-                viewBox="0 0 180 180">
 
-                <circle
-                    cx="90"
-                    cy="90"
-                    r="78"
-                    fill="none"
-                    stroke="#22c55e"
-                    stroke-width="14"
-                    stroke-linecap="round"
-                    stroke-dasharray="490"
-                    stroke-dashoffset="0"
-                    id="progress">
-                </circle>
+<div>
 
-            </svg>
 
-            <!-- Center -->
+<h3 class="text-2xl sm:text-3xl font-black bg-gradient-to-r from-violet-600 to-cyan-500 bg-clip-text text-transparent">
 
-            <div class="text-center">
+Typing Speed Test
 
-                <p
-                    class="uppercase text-slate-500 tracking-[3px] text-sm font-bold">
+</h3>
 
-                    Time Left
 
-                </p>
 
-                <h2
-                    id="timer"
-                    class="text-6xl font-black text-slate-800 mt-1">
+<p class="text-xs text-slate-400 font-semibold mt-1">
 
-                    30
+Test your typing speed
 
-                </h2>
+</p>
 
-                <span
-                    class="text-slate-400 text-sm">
 
-                    Seconds
-
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </div>
 
-            <!-- Text -->
-            <div class="w-full">
-
-                <h5 class="text-xl font-bold capitalize mb-3">
-                    Type the following text :
-                </h5>
-
-                <p id="para"
-                    class="bg-gray-50 select-none rounded-2xl shadow-md p-5 text-gray-700 text-lg leading-8">
-                    Lorem ipsum dolor sit amet consectetur eligendi cupiditate
-                    
-                </p>
-
-            </div>
-
-            <!-- Input -->
-            <div class="w-full">
-
-                <textarea id="inp" rows="5" placeholder="Start typing..."
-                    class="w-full h-40 text-xl resize-none rounded-2xl  border-2 border-sky-500  bg-white shadow-xl px-5 py-4  font-semibold outline-none"></textarea>
-
-            </div>
-
-            <!-- Status -->
-            <div class="w-full">
-
-                <span id="status" class="font-semibold ">
-                    
-                </span>
-
-            </div>
 
 
 
-            <!-- Legend -->
-            <div class="w-full flex justify-around">
 
-                <div class="flex items-center gap-2 font-bold">
-                    <span class="w-4 h-4 rounded-full bg-amber-400 shadow"></span>
-                    <h6>On Track</h6>
-                </div>
+<span id="reset"
 
-                <div class="flex items-center gap-2 font-bold">
-                    <span class="w-4 h-4 rounded-full bg-green-400 shadow"></span>
-                    <h6>Correct</h6>
-                </div>
+class="w-12 h-12 flex justify-center items-center rounded-2xl bg-white border border-slate-200 shadow-xl cursor-pointer hover:scale-110 hover:rotate-180 duration-500 overflow-hidden">
 
-                <div class="flex items-center gap-2 font-bold">
-                    <span class="w-4 h-4 rounded-full bg-red-400 shadow"></span>
-                    <h6>Wrong</h6>
-                </div>
 
-            </div>
+<img src="img/icons8-restart.gif"
 
-        </div>
+class="w-full h-full object-cover rounded-2xl"
 
-    </section>
+alt="">
 
-    <footer class="w-full mt-20 bg-slate-900">
 
-    <div class="max-w-6xl mx-auto px-6 py-10">
 
-        <div class="flex flex-wrap justify-between items-center gap-10">
+</span>
 
-            <!-- Profile -->
 
-            <div class="flex items-center gap-5">
 
-                <img src="img/github_profile_under_1mb.jpg"
-                    class="w-20 h-20 rounded-full border-2 border-violet-500 object-cover">
 
-                <div>
+</div>
 
-                    <h2 class="text-2xl font-bold text-white">
-                        Pooria Rezaee
-                    </h2>
 
-                    <p class="text-slate-400 mt-1">
-                        Front-End Developer
-                    </p>
 
-                </div>
 
-            </div>
 
-            <!-- Social -->
+<!-- Timer -->
 
-            <div class="flex flex-wrap gap-3">
 
-                <a href="https://github.com/poria-dev"
-                    target="_blank"
-                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-slate-700 duration-300 text-white">
+<div class="w-full flex justify-center">
 
-                    GitHub
 
-                </a>
 
-                <a href="https://linkedin.com/in/pooria-rezaee"
-                    target="_blank"
-                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-blue-700 duration-300 text-white">
+<div class="relative flex justify-center items-center">
 
-                    LinkedIn
 
-                </a>
 
-                <a href="https://instagram.com/poria.frontend"
-                    target="_blank"
-                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-pink-600 duration-300 text-white">
 
-                    Instagram
 
-                </a>
+<div class="absolute inset-0 rounded-full bg-gradient-to-r from-violet-500/30 to-cyan-400/30 blur-3xl animate-pulse">
 
-                <a href="https://t.me/pori_07"
-                    target="_blank"
-                    class="px-5 py-2 rounded-xl bg-white/5 hover:bg-[#229ED9] duration-300 text-white">
 
-                    Telegram
+</div>
 
-                </a>
 
-            </div>
 
-        </div>
 
-        <div class="border-t border-white/10 mt-8 pt-6 text-center">
 
-            <p class="text-slate-400 text-sm leading-7">
+<div class="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full bg-white shadow-[0_20px_60px_rgba(99,102,241,.25)] flex justify-center items-center">
 
-                Built with HTML, Tailwind CSS & JavaScript •
-                Designed for practicing typing speed and accuracy.
 
-            </p>
 
-            <p class="text-slate-500 text-sm mt-3">
 
-                © 2026 Pooria Rezaee. All Rights Reserved.
 
-            </p>
+<div class="absolute inset-0 rounded-full border-[12px] border-slate-100">
 
-        </div>
 
-    </div>
+</div>
+
+
+
+
+
+<svg
+
+class="absolute inset-0 -rotate-90"
+
+viewBox="0 0 180 180">
+
+
+<circle
+
+cx="90"
+
+cy="90"
+
+r="78"
+
+fill="none"
+
+stroke="#22c55e"
+
+stroke-width="14"
+
+stroke-linecap="round"
+
+stroke-dasharray="490"
+
+stroke-dashoffset="0"
+
+id="progress">
+
+
+</circle>
+
+
+</svg>
+
+<!-- Timer Center -->
+
+
+<div class="text-center z-10">
+
+
+<p class="uppercase text-slate-400 tracking-[4px] text-xs font-black">
+
+Time
+
+</p>
+
+
+<h2
+
+id="timer"
+
+class="text-5xl sm:text-6xl font-black text-slate-800 mt-1">
+
+
+30
+
+
+</h2>
+
+
+
+<span class="text-slate-400 text-xs font-bold">
+
+Seconds
+
+</span>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Text -->
+
+
+<div class="w-full">
+
+
+<h5 class="text-lg font-black text-slate-700 mb-3">
+
+
+Type the following text:
+
+
+</h5>
+
+
+
+
+
+<p id="para"
+
+class="bg-slate-900 text-slate-100 select-none rounded-[25px] shadow-xl p-5 text-base leading-7 font-semibold border border-white/10">
+
+
+Lorem 
+
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Input -->
+
+
+<div class="w-full">
+
+
+<textarea
+
+
+id="inp"
+
+
+rows="5"
+
+
+placeholder="Start typing..."
+
+
+class="w-full h-28 sm:h-32 text-lg resize-none rounded-[25px] border-2 border-sky-500 bg-white/90 shadow-xl px-5 py-4 font-semibold outline-none focus:ring-4 focus:ring-violet-200 duration-300"
+
+
+
+></textarea>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Status -->
+
+
+<div class="w-full bg-white/60 rounded-2xl px-4 py-2 shadow">
+
+
+<span id="status"
+
+class="font-bold text-sm text-slate-600">
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Legend -->
+
+
+<div class="w-full flex justify-around items-center text-sm">
+
+
+
+<div class="flex items-center gap-2 font-bold text-slate-700">
+
+
+<span class="w-3.5 h-3.5 rounded-full bg-amber-400 shadow">
+
+
+</span>
+
+
+<h6>
+
+On Track
+
+</h6>
+
+
+</div>
+
+
+
+
+
+<div class="flex items-center gap-2 font-bold text-slate-700">
+
+
+<span class="w-3.5 h-3.5 rounded-full bg-green-400 shadow">
+
+
+</span>
+
+
+<h6>
+
+Correct
+
+</h6>
+
+
+</div>
+
+
+
+
+
+<div class="flex items-center gap-2 font-bold text-slate-700">
+
+
+<span class="w-3.5 h-3.5 rounded-full bg-red-400 shadow">
+
+
+</span>
+
+
+<h6>
+
+Wrong
+
+</h6>
+
+
+</div>
+
+
+
+
+</div>
+<!-- Footer -->
+
+
+<footer class="w-full mt-3 bg-slate-900 rounded-[30px] shadow-2xl overflow-hidden">
+
+
+<div class="px-5 py-5">
+
+
+
+<div class="flex flex-col sm:flex-row justify-between items-center gap-5">
+
+
+
+
+
+<!-- Profile -->
+
+
+<div class="flex items-center gap-3">
+
+
+<img
+
+src="img/github_profile_under_1mb.jpg"
+
+class="w-14 h-14 rounded-full border-2 border-violet-500 object-cover shadow-lg"
+
+alt="">
+
+
+
+
+
+<div>
+
+
+<h2 class="text-lg font-black text-white">
+
+Pooria Rezaee
+
+</h2>
+
+
+<p class="text-slate-400 text-xs font-semibold">
+
+Front-End Developer
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Social -->
+
+
+<div class="flex flex-wrap justify-center gap-2">
+
+
+
+<a
+
+href="https://github.com/poria-dev"
+
+target="_blank"
+
+class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-slate-700 duration-300 text-white text-xs font-bold">
+
+
+GitHub
+
+
+</a>
+
+
+
+
+
+<a
+
+href="https://linkedin.com/in/pooria-rezaee"
+
+target="_blank"
+
+class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-blue-700 duration-300 text-white text-xs font-bold">
+
+
+LinkedIn
+
+
+</a>
+
+
+
+
+
+
+<a
+
+href="https://instagram.com/poria.frontend"
+
+target="_blank"
+
+class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-pink-600 duration-300 text-white text-xs font-bold">
+
+
+Instagram
+
+
+</a>
+
+
+
+
+
+<a
+
+href="https://t.me/pori_07"
+
+target="_blank"
+
+class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-cyan-600 duration-300 text-white text-xs font-bold">
+
+
+Telegram
+
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="border-t border-white/10 mt-5 pt-4 text-center">
+
+
+<p class="text-slate-400 text-xs">
+
+
+Built with HTML, Tailwind CSS & JavaScript
+
+
+</p>
+
+
+
+<p class="text-slate-500 text-xs mt-2">
+
+
+© 2026 Pooria Rezaee. All Rights Reserved.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
 
 </footer>
 
-    <script src="app.js"></script>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+<!-- Result Modal -->
+
+<div id="modal"
+
+class="fixed inset-0 hidden z-50 flex justify-center items-center bg-black/50 backdrop-blur-md px-4">
+
+
+<div class="w-full max-w-md bg-white rounded-[35px] shadow-[0_30px_90px_rgba(0,0,0,.35)] p-7 text-center border border-white animate-bounce">
+
+
+
+<div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 flex justify-center items-center text-4xl shadow-xl">
+
+🏆
+
+</div>
+
+
+
+
+<h2 class="text-3xl font-black text-slate-800 mt-5">
+
+Amazing!
+
+</h2>
+
+
+
+
+<p id="result"
+
+class="text-slate-500 font-semibold mt-3 leading-7">
+
+You completed the typing test.
+
+</p>
+
+
+
+
+
+<div class="flex justify-center mt-6">
+
+
+<button id="again"
+
+class="px-8 py-3 rounded-2xl bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-black shadow-xl hover:scale-110 duration-300">
+
+
+Play Again
+
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
 
 </body>
+
+
 
 </html>
 
