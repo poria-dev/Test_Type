@@ -38,7 +38,7 @@ Measure your typing speed, improve your accuracy and challenge yourself with a c
 
 <a href="https://poria-dev.github.io/Typing-Speed-Test/src">
 
-<img src="./demoimg.png" width="100%" alt="Typing Speed Test"/>
+<img src="test.png" width="100%" alt="Typing Speed Test"/>
 
 </a>
 
